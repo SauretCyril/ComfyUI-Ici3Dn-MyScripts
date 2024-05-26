@@ -47,7 +47,7 @@ class Ici3Dn_Identity:
         #             node["widgets_values"] = [ID]
         self.original=Originale 
         # {"ui": {"text": ID}, "result": (ID,)}
-        return {"ui": {"text": ID}}
+        return  {"ui": {"text": ID}, "result": (ID,)}
 
 
 NODE_CLASS_MAPPINGS = {
