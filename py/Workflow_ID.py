@@ -1,5 +1,6 @@
 
-
+import os.path
+Ici3Dn_data_Conf="G:\\GenezIA_Working_G\\WorkSpace_Python\\PyRun_Comfyui_Data\\nodes"	
 class Ici3Dn_Identity:
     @classmethod
    
@@ -50,8 +51,11 @@ class Ici3Dn_Identity:
         #self.original=Originale 
         # {"ui": {"text": ID}, "result": (ID,)}
         #dir = get_config_value("ConfData")
-        
-        return  {"ui": {"text": ID}, "result": (ID,)}
+        file=(f"{Ici3Dn_data_Conf}\\{ID}.json")
+        if os.path.exists(file):
+            isConfFil="True"
+        conf=f"Conf = {isConfFil}"    
+        return  {"ui": {"text": "ConfData"}, "result": (conf,)}
 
 
 NODE_CLASS_MAPPINGS = {
