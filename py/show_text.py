@@ -20,11 +20,11 @@ class Ici3Dn_Identity:
         }
    
     INPUT_IS_LIST = True
-    RETURN_NAMES = ("out")
-    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ()
+    RETURN_TYPES = ()
     FUNCTION = "notify"
     OUTPUT_NODE = True
-    OUTPUT_IS_LIST = (True,)
+    #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
     def notify(self, ID ): #Originale
