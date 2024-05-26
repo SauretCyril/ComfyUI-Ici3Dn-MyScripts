@@ -22,7 +22,7 @@ class Ici3Dn_Identity:
     #RETURN_TYPES={"
     RETURN_TYPES = ("STRING")
     FUNCTION = "notify"
-    OUTPUT_NODE = True
+    OUTPUT_NODE = False
     #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
@@ -46,7 +46,7 @@ class Ici3Dn_Identity:
         #             node["widgets_values"] = [ID]
         self.original=Originale 
         # {"ui": {"text": ID}, "result": (ID,)}
-        return ID
+        return {"ui": {"text": ID}, "result": (ID,)}
 
 
 NODE_CLASS_MAPPINGS = {
