@@ -1,4 +1,5 @@
-from Ici3Dn import get_config_value
+#from Ici3Dn import get_config_value
+from ..Ici3Dn import *
 class Ici3Dn_Identity:
     @classmethod
    
