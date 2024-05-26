@@ -11,7 +11,7 @@ app.registerExtension({
 					for (let i = 1; i < this.widgets.length; i++) {
 						this.widgets[i].onRemove?.();
 					}
-					this.widgets.length = 2;
+					this.widgets.length = 1;
 				}
 
 				const v = [...text];
@@ -23,7 +23,8 @@ app.registerExtension({
 					w.inputEl.readOnly = true;
 					w.inputEl.style.opacity = 0.6;
 					
-					w.value = list;
+					//w.value = list;
+					w.value=this.widgets.length;
 				}
 
 				requestAnimationFrame(() => {
