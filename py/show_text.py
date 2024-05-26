@@ -19,10 +19,11 @@ class Ici3Dn_Identity:
             }
         }
     #INPUT_IS_LIST = True
-    #RETURN_TYPES={"
+   
+    RETURN_NAMES = {"out"}
     RETURN_TYPES = ("STRING")
     FUNCTION = "notify"
-    OUTPUT_NODE = False
+    OUTPUT_NODE = True
     #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
@@ -46,7 +47,7 @@ class Ici3Dn_Identity:
         #             node["widgets_values"] = [ID]
         self.original=Originale 
         # {"ui": {"text": ID}, "result": (ID,)}
-        return {"ui": {"text": ID}, "result": (ID,)}
+        return {"ui": {"text": ID}}
 
 
 NODE_CLASS_MAPPINGS = {
