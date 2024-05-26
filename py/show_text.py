@@ -1,4 +1,4 @@
-class ShowText26:
+class Ici3Dn_Identity:
     @classmethod
     def INPUT_TYPES(s):
         return {
@@ -41,9 +41,9 @@ class ShowText26:
 
 
 NODE_CLASS_MAPPINGS = {
-    "ShowText26": ShowText26,
+    "Ici3Dn_Identity": Ici3Dn_Identity,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ShowText26": "Show Text 26",
+    "Ici3Dn_Identity": "Ici3Dn Identity",
 }
