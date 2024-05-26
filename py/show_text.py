@@ -1,7 +1,7 @@
 class Ici3Dn_Identity:
     @classmethod
    
-    def INPUT_TYPES(s):
+    
         # return {
         #     "required": {
         #         "text": ("STRING", {"forceInput": True}),
@@ -11,7 +11,7 @@ class Ici3Dn_Identity:
         #         "extra_pnginfo": "EXTRA_PNGINFO",
         #     },
         # }
-   
+    def INPUT_TYPES(s):
         return {
             "required": {
                 "ID": ("STRING", {"multiline": False}),
@@ -20,7 +20,7 @@ class Ici3Dn_Identity:
         }
     #INPUT_IS_LIST = True
     #RETURN_TYPES={"
-    #RETURN_TYPES = ("STRING",)
+    RETURN_TYPES = ("STRING",)
     FUNCTION = "notify"
     OUTPUT_NODE = True
     #OUTPUT_IS_LIST = (True,)
