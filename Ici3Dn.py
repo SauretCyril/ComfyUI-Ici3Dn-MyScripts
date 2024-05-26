@@ -27,7 +27,7 @@ def log(message, type=None, always=False, name=None):
     if name is None:
         name = get_extension_config()["name"]
 
-    print(f"(pysssss:{name}) {message}")
+    print(f"(ici3dn:{name}) {message}")
 
 
 def get_ext_dir(subpath=None, mkdir=False):
@@ -57,7 +57,7 @@ def get_comfy_dir(subpath=None, mkdir=False):
 def get_web_ext_dir():
     config = get_extension_config()
     name = config["name"]
-    dir = get_comfy_dir("web/extensions/pysssss")
+    dir = get_comfy_dir("web/extensions/ici3dn")
     if not os.path.exists(dir):
         os.makedirs(dir)
     dir = os.path.join(dir, name)
@@ -69,8 +69,8 @@ def get_extension_config(reload=False):
     if reload == False and config is not None:
         return config
 
-    config_path = get_ext_dir("pysssss.json")
-    default_config_path = get_ext_dir("pysssss.default.json")
+    config_path = get_ext_dir("Ici3Dn.json")
+    default_config_path = get_ext_dir("Ici3Dn.default.json")
     if not os.path.exists(config_path):
         if os.path.exists(default_config_path):
             shutil.copy(default_config_path, config_path)
