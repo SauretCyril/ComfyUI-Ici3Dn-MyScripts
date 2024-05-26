@@ -20,7 +20,7 @@ class Ici3Dn_Identity:
         }
     #INPUT_IS_LIST = True
    
-    RETURN_NAMES = {"out"}
+    RETURN_NAMES = ("out")
     RETURN_TYPES = ("STRING")
     FUNCTION = "notify"
     OUTPUT_NODE = True
