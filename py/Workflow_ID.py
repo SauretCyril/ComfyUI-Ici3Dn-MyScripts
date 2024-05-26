@@ -52,6 +52,7 @@ class Ici3Dn_Identity:
         # {"ui": {"text": ID}, "result": (ID,)}
         #dir = get_config_value("ConfData")
         file=(f"{Ici3Dn_data_Conf}\\{ID}.json")
+        isConfFil=False
         if os.path.exists(file):
             isConfFil="True"
         conf=f"Conf = {isConfFil}"    
