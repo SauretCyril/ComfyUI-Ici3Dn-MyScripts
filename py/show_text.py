@@ -18,11 +18,12 @@ class Ici3Dn_Identity:
                 "Originale": ("STRING", {"multiline": False}),
             }
         }
-    INPUT_IS_LIST = True
-    RETURN_TYPES = ("STRING",)
+    #INPUT_IS_LIST = True
+    #RETURN_TYPES={"
+    #RETURN_TYPES = ("STRING",)
     FUNCTION = "notify"
     OUTPUT_NODE = True
-    OUTPUT_IS_LIST = (True,)
+    #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
     def notify(self, ID,Originale ):
@@ -44,7 +45,7 @@ class Ici3Dn_Identity:
         #         if node:
         #             node["widgets_values"] = [ID]
         self.original=Originale 
-        return {"ui": {"text": ID}}
+        return {"ui": {"text": ID}, "result": (ID,)}
 
 
 NODE_CLASS_MAPPINGS = {
