@@ -24,8 +24,8 @@ app.registerExtension({
 					w.inputEl.readOnly = true;
 					w.inputEl.style.opacity = 0.6;
 					
-					//w.value = list;
-					w.value=this.widgets.length;
+					w.value = list;
+					//w.value=this.widgets.length;
 				}
 
 				requestAnimationFrame(() => {
