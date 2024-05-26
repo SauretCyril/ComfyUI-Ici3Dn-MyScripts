@@ -8,10 +8,11 @@ app.registerExtension({
 		if (nodeData.name === "Ici3Dn_Identity") {
 			function populate(text) {
 				if (this.widgets) {
-					for (let i = 1; i < this.widgets.length; i++) {
+					
+					/*for (let i = 1; i < this.widgets.length; i++) {
 						this.widgets[i].onRemove?.();
-					}
-					this.widgets.length = 1;
+					}*/
+					//this.widgets.length = 1;
 				}
 
 				const v = [...text];
