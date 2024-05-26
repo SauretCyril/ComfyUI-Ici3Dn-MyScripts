@@ -56,7 +56,7 @@ class Ici3Dn_Identity:
         if os.path.exists(file):
             isConfFil="True"
         conf=f"Conf = {isConfFil}"    
-        return {"ui": {"text": conf}, "result": (conf,)}
+        return {conf}
 
 
 NODE_CLASS_MAPPINGS = {
