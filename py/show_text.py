@@ -15,16 +15,15 @@ class Ici3Dn_Identity:
         return {
             "required": {
                 "ID": ("STRING", {"multiline": False}),
+                "Original": ("STRING", {"multiline": False}),
             },
-            "optional": 
-                { "Original": ("STRING", {"multiline": False}),}
         }
    
     INPUT_IS_LIST = True
     RETURN_NAMES = ()
     RETURN_TYPES = ()
     FUNCTION = "notify"
-    OUTPUT_NODE = True
+    OUTPUT_NODE = False
     #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
