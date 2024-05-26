@@ -11,7 +11,7 @@ app.registerExtension({
 					for (let i = 1; i < this.widgets.length; i++) {
 						this.widgets[i].onRemove?.();
 					}
-					this.widgets.length = 1;
+					this.widgets.length = 2;
 				}
 
 				const v = [...text];
@@ -22,6 +22,7 @@ app.registerExtension({
 					const w = ComfyWidgets["STRING"](this, "text", ["STRING", { multiline: true }], app).widget;
 					w.inputEl.readOnly = true;
 					w.inputEl.style.opacity = 0.6;
+					
 					w.value = list;
 				}
 
