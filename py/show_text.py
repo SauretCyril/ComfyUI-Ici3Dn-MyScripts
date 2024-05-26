@@ -18,10 +18,10 @@ class Ici3Dn_Identity:
                 "Originale": ("STRING", {"multiline": False}),
             }
         }
-    #INPUT_IS_LIST = True
    
+    INPUT_IS_LIST = True
     RETURN_NAMES = ("out")
-    RETURN_TYPES = ("STRING")
+    RETURN_TYPES = ("STRING",)
     FUNCTION = "notify"
     OUTPUT_NODE = True
     OUTPUT_IS_LIST = (True,)
