@@ -2,7 +2,7 @@ import importlib.util
 import glob
 import os
 import sys
-from .py.Ici3Dn_utils import init, get_ext_dir
+from .Ici3Dn_utils import init, get_ext_dir
 
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}

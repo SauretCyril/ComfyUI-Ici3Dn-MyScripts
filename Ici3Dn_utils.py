@@ -80,7 +80,7 @@ def get_extension_config(reload=False):
                 return {"name": "Unknown", "version": -1}
     
         else:
-            log("Missing pysssss.default.json, this extension may not work correctly. Please reinstall the extension.",
+            log("Missing Ici3dn.default.json, this extension may not work correctly. Please reinstall the extension.",
                 type="ERROR", always=True, name="???")
             print(f"Extension path: {get_ext_dir()}")
             return {"name": "Unknown", "version": -1}
