@@ -23,7 +23,7 @@ class Ici3Dn_Identity:
     RETURN_NAMES = ()
     RETURN_TYPES = ()
     FUNCTION = "notify"
-    OUTPUT_NODE = False
+    OUTPUT_NODE = True
     #OUTPUT_IS_LIST = (True,)
 
     CATEGORY = "Ici3Dn_Nodes"
