@@ -1,4 +1,4 @@
-from Ici3Dn_utils import get_config_value
+
 
 class Ici3Dn_Identity:
     @classmethod
@@ -49,9 +49,9 @@ class Ici3Dn_Identity:
         #             node["widgets_values"] = [ID]
         #self.original=Originale 
         # {"ui": {"text": ID}, "result": (ID,)}
-        dir = get_config_value("ConfData")
+        #dir = get_config_value("ConfData")
         
-        return  {"ui": {"text": ID}, "result": (dir,)}
+        return  {"ui": {"text": ID}, "result": (ID,)}
 
 
 NODE_CLASS_MAPPINGS = {
