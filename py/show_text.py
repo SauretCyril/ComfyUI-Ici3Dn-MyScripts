@@ -1,25 +1,32 @@
 class Ici3Dn_Identity:
     @classmethod
+   
     def INPUT_TYPES(s):
+        # return {
+        #     "required": {
+        #         "text": ("STRING", {"forceInput": True}),
+        #     },
+        #     "hidden": {
+        #         "unique_id": "UNIQUE_ID",
+        #         "extra_pnginfo": "EXTRA_PNGINFO",
+        #     },
+        # }
+   
         return {
             "required": {
-                "text": ("STRING", {"forceInput": True}),
-            },
-            "hidden": {
-                "unique_id": "UNIQUE_ID",
-                "extra_pnginfo": "EXTRA_PNGINFO",
-            },
+                "ID": ("STRING", {"multiline": False}),
+                "Originale": ("STRING", {"multiline": False}),
+            }
         }
-
     INPUT_IS_LIST = True
     RETURN_TYPES = ("STRING",)
     FUNCTION = "notify"
     OUTPUT_NODE = True
     OUTPUT_IS_LIST = (True,)
 
-    CATEGORY = "utils"
+    CATEGORY = "Ici3Dn_Nodes"
 
-    def notify(self, text, unique_id=None, extra_pnginfo=None):
+    def notify(self, ID, unique_id=None, extra_pnginfo=None):
         if unique_id is not None and extra_pnginfo is not None:
             if not isinstance(extra_pnginfo, list):
                 print("Error: extra_pnginfo is not a list")
@@ -35,9 +42,9 @@ class Ici3Dn_Identity:
                     None,
                 )
                 if node:
-                    node["widgets_values"] = [text]
+                    node["widgets_values"] = [ID]
 
-        return {"ui": {"text": text}, "result": (text,)}
+        return {"ui": {"text": ID}, "result": (ID,)}
 
 
 NODE_CLASS_MAPPINGS = {
